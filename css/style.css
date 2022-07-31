@@ -1,0 +1,138 @@
+a{
+    text-decoration: none;
+}
+.profile-img .profile-des-title{
+    margin-left: 10px;
+}
+@media (min-width: 1400px){
+    .container{
+        max-width: 900px;
+    }
+}
+
+header nav{
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+.navbar-nav li a svg{
+    width: 24px;
+    height: 24px;
+    fill: #262626;
+}
+
+.navbar-nav li a img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #A166AE;
+}
+.follower-content{
+    position: relative;
+}
+.follower-content img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+}
+.follower{
+    display: flex;
+    gap: 15px;
+}
+
+.follower-name{
+    font-size: 12px;
+}
+
+.threeDots i{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: center;
+    color: #14191e;
+    display: block;
+}
+.threeDots:hover i{
+    background-color: rgba(20, 25, 30, 0.1);
+}
+.profile-img img{
+    width: 50px;
+    height: 50px;
+    border: 3px solid #0d6efd;
+}
+.profile-des-title{
+    color: #14191e;
+    font-weight: 700;
+}
+.profile-des span{
+    font-size: 14px;
+}
+.profile-des span::before{
+    content: '•';
+    color: #6c757d;
+    padding-left: 8px;
+    padding-right: 4px;
+    
+
+}
+.profile-feed a{
+    padding: 5px 10px;
+    transition: all 0.4s ease;
+}
+.profile-feed a:hover{
+    background-color: rgba(20, 25, 30, 0.1);
+    border-radius: 5px;
+}
+.post-icon span{
+    font-weight: 700;
+}
+
+.right-user-photo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+}
+.right-user-photo h6{
+    font-size: 14px;
+    font-weight: 700;
+    color: #262626;
+}
+.right-user-photo p{
+    font-size: 14px;
+    color: #8E8E8E;
+}
+.switch a{
+    font-size: 12px;
+    color: #0095F6;
+    font-weight: 700;
+}
+main{
+    background-color: rgb(250, 250, 250);
+}
+.suggest-user-photo img{
+    width: 32px;
+    height: 32px;
+}
+.suggest-user-photo p{
+    font-size: 12px;
+}
+.sforyou{
+    font-size: 14px;
+    color: #8E8E8E;
+    font-weight: 600;
+}
+.see_all a{
+    font-size: 12px;
+    color: #262626;
+}
+.follower-content {
+    cursor: pointer;
+}
+
+i{
+    pointer-events: none;
+}

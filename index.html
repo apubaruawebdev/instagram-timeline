@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram Project</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/Instagram_logo.svg.png" alt="" width="100px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <svg aria-label="Home" class="_ab6-" color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 24 24" width="24">
+                  <path
+                    d="M22 23h-6.001a1 1 0 01-1-1v-5.455a2.997 2.997 0 10-5.993 0V22a1 1 0 01-1 1H2a1 1 0 01-1-1V11.543a1.002 1.002 0 01.31-.724l10-9.543a1.001 1.001 0 011.38 0l10 9.543a1.002 1.002 0 01.31.724V22a1 1 0 01-1 1z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg aria-label="Direct" class="_ab6-" color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 24 24" width="24">
+                  <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218"
+                    y1="3" y2="10.083"></line>
+                  <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                    stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#post-modal" data-bs-toggle="modal">
+                <svg aria-label="New post" class="_ab6-" color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 24 24" width="24">
+                  <path
+                    d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552z"
+                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  </path>
+                  <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line>
+                  <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg aria-label="Find People" class="_ab6-" color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 24 24" width="24">
+                  <polygon fill="none" points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon>
+                  <polygon fill-rule="evenodd" points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056"></polygon>
+                  <circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2"></circle>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg aria-label="Activity Feed" class="_ab6-" color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 24 24" width="24">
+                  <path
+                    d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="images/apu barua.jpg" alt="">
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container px-5">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="card-follower my-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="follower">
+                  <div class="follower-content text-center">
+                    <canvas class="_aarh" height="66" width="66"
+                      style="width: 66px;height: 66px;background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);border-radius: 50%"></canvas>
+                    <img src="images/apu barua.jpg" alt="">
+                    <div class="follower-name">apubarua</div>
+                  </div>
+                  <div class="follower-content text-center">
+                    <canvas class="_aarh" height="66" width="66"
+                      style="width: 66px;height: 66px;background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);border-radius: 50%"></canvas>
+                    <img src="images/10.jpg" alt="">
+                    <div class="follower-name">leokarda</div>
+                  </div>
+                  <div class="follower-content text-center">
+                    <canvas class="_aarh" height="66" width="66"
+                      style="width: 66px;height: 66px;background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);border-radius: 50%"></canvas>
+                    <img src="images/11.jpg" alt="">
+                    <div class="follower-name">leoneck</div>
+                  </div>
+                  <div class="follower-content text-center">
+                    <canvas class="_aarh" height="66" width="66"
+                      style="width: 66px;height: 66px;background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);border-radius: 50%"></canvas>
+                    <img src="images/02.jpg" alt="">
+                    <div class="follower-name">leoneck</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-details">
+
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="mt-4 d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-2 right-user-photo align-items-center">
+              <img src="images/apu barua.jpg" alt="">
+              <div>
+                <h6 class="m-0">opubarua</h6>
+                <p class="m-0">Opu</p>
+              </div>
+            </div>
+            <div class="switch">
+              <a href="">switch</a>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <div class="sforyou">
+              Suggestions For You
+            </div>
+            <div class="see_all">
+              <a href="">See All</a>
+            </div>
+          </div>
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-2 right-user-photo suggest-user-photo align-items-center">
+              <img src="images/11.jpg" alt="">
+              <div>
+                <h6 class="m-0">yuri_ripull</h6>
+                <p class="m-0">Follows you</p>
+              </div>
+            </div>
+            <div class="switch">
+              <a href="">Follow</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!--===========================================
+                post modal start here
+    ============================================-->
+  <div class="modal fade" id="post-modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Add Your Post</h2>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="msg"></div>
+          <form action="" id="post_modal_form">
+            <div class="my-3">
+              <label for="">Auth Name</label>
+              <input type="text" class="form-control" name="authName">
+            </div>
+            <div class="my-3">
+              <label for="">Auth Photo</label>
+              <input type="text" class="form-control" name="authPhoto">
+            </div>
+            <div class="my-3">
+              <label for="">post Photo</label>
+              <input type="text" class="form-control" name="postPhoto">
+            </div>
+            <div class="my-3">
+              <label for="">post Description</label>
+              <textarea id="" rows="3" class="form-control" name="postDescription"></textarea>
+            </div>
+            <div class="my-3">
+              <input type="submit" class="btn btn-primary w-100" value="Add Post">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--===========================================
+              post modal end here
+  ============================================-->
+
+  <!--===========================================
+                post modal start here
+    ============================================-->
+  <div class="modal fade" id="edit_post_modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Edit Your Post</h2>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="msg"></div>
+          <form action="" id="edit_post_form">
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--===========================================
+                post modal end here
+    ============================================-->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="js/function.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
